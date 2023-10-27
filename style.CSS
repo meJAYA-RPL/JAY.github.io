@@ -1,83 +1,97 @@
-:root
-{
-    --oren : #ff7b00;
-    --dark-blue : #1b1535;
-    --kuning : #ebd400;
-    --white : #ffffff;
-    --hijau :  #31f00b;
-    --hitam : #000000da;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,700&family=Poppins:wght@300;400;600;700;800&display=swap');
 
-*
-{
-    margin: 0%;
-    padding: 0%;
-    text-decoration: none;
-    list-style-type: none;
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
     box-sizing: border-box;
-    font-family: 'tahoma';
 }
 
-body
-{
-    background-color: var(--dark-blue);
-    color: var(--white)
+img{
+    width: 230px;
+    height: 200px;
 }
 
-header
-{
-    text-align: center;
-    background-color: var(--oren);
-    position: fixed;
-    width: 100%;
-    font: 5px;
-    padding: 2%;
-    font-weight: bold;
+a{
+    text-decoration: none;
 }
 
-.title
-{
-    color: var(--hitam);
-    font-weight: bold;
-    font-size: 15pt;
-}
-.input-search
-{
-    width: 35%;
-    padding: 2px;
-    border-radius: 10px 0px 0px 10px;
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffff;
 }
 
-.input-submit
-{
-    margin-left: -15px;
-    border-radius: 10px 10px 10px 10px;
-    padding: 2px;
-    background-color: var(--kuning);
-    color: var(--dark-blue);
-    font-weight: bold;
-    width: 10%;
-    font-size: auto;
-}
-
-nav
-{
-    margin-top: 15px;
-}
-
-nav ul
-{
+nav{
+    max-width: 1200px;
+    margin: left;
+    padding: 1rem 1rem;
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    gap: 43rem;
 }
 
-nav ul li a
-{
-    color: var(--hijau);
+.nav-logo{
+    max-width: 2px;
 }
 
-nav ul li a:hover
-{
-    border-bottom: 3px solid var(--white);
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: 10%;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.79rem;
+    color: #0a0a0a;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgb(255, 0, 55);
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: red;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #0a0a0a;
+}
+
+.nav-logo2{
+    text-align: center;
+}
+
+.nav-logo3{
+    text-align: center;
+    padding: 2rem;
+}
+
+.nav-logo4{
+    text-align: center;
+}
+
+.nav-pemilihan{
+    text-align: center;
 }
